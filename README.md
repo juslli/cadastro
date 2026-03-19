@@ -1,37 +1,47 @@
-# API REST de Cadastro de Pessoas
+# 🚀 API REST - Cadastro de Pessoas
 
-Projeto desenvolvido para estudo de back-end com **Java + Spring Boot**, com foco em arquitetura em camadas e operações de **CRUD completo**.
-
----
-
-## 🚀 Objetivo
-
-Construir uma API REST para gerenciamento de pessoas, aplicando conceitos fundamentais de back-end como:
-
-- criação de endpoints
-- estrutura em camadas
-- integração com banco de dados
-- persistência com JPA
-- organização de projeto com Maven
+API desenvolvida com **Java + Spring Boot**, com operações completas de CRUD, validação de dados, tratamento de erros e integração com banco de dados MySQL.
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## 🧠 Tecnologias utilizadas
 
 - Java 17
 - Spring Boot
-- Spring Web
 - Spring Data JPA
-- H2 Database
+- MySQL
+- Swagger (OpenAPI)
 - Maven
 
 ---
 
-## 📂 Estrutura do projeto
+## ⚙️ Funcionalidades
+
+- Criar pessoa
+- Listar todas as pessoas
+- Buscar pessoa por ID
+- Atualizar dados de pessoa
+- Deletar pessoa
+- Validação de campos (nome e email)
+- Tratamento de erros de validação
+
+---
+
+## 🔗 Endpoints da API
+
+| Método | Endpoint | Descrição |
+|--------|----------|----------|
+| POST   | /pessoas | Criar nova pessoa |
+| GET    | /pessoas | Listar todas |
+| GET    | /pessoas/{id} | Buscar por ID |
+| PUT    | /pessoas/{id} | Atualizar pessoa |
+| DELETE | /pessoas/{id} | Deletar pessoa |
+
+---
+
+## 🧪 Testes da API
+
+A API pode ser testada diretamente pelo Swagger:
 
 ```text
-src/main/java
- ├── controller
- ├── service
- ├── repository
- └── model
+http://localhost:8080/swagger-ui.html
